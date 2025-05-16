@@ -16,7 +16,8 @@ start= datetime(end.year-20,end.month,end.day)
 
 df=yf.download(stock, start, end)
 
-model = load_model(r"C:\Users\Lenovo\Downloads\Latest_stack_price_model.keras")
+model = load_model("Latest_stack_price_model.keras")
+
 
 st.subheader("Stock Data")
 st.write(df)
